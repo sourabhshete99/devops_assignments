@@ -1,0 +1,25 @@
+version: '3'
+services:
+    node1:
+        image: "mysql:latest"
+        container_name: "node1"
+        environment:
+            - MYSQL_ROOT_PASSWORD=pucsd
+        ports:
+            - "3311:3306"
+
+    node2:
+        image: "mysql:latest"
+        container_name: "node2"
+        environment:
+            - MYSQL_ROOT_PASSWORD=pucsd
+        ports:
+            - "3312:3306"
+
+    node3:
+        image: "mysql:latest"
+        container_name: "node3"
+        environment:
+            - MYSQL_ROOT_PASSWORD=pucsd
+        ports:
+            - "3313:3306"
